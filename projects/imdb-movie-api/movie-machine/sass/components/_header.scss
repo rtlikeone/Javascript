@@ -1,0 +1,22 @@
+.header {
+  min-height: 10vh;
+  background: var(--color-primary);
+  color: var(--color-grey-light-1);
+  display: flex;
+
+  &__head__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__navbar {
+      & ul li {
+        display: inline-block;
+
+        &:not(last-child) {
+          margin-right: 15px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Movie machine - compare your favorite movies</title>
+    <meta name="description" content="IMDB Movies machine" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+    />
+    <link rel="stylesheet" href="dist/css/main.min.css" />
+  </head>
+
+  <body>
+    <section class="header">
+      <div class="header__head container">
+        <nav class="header__head__nav">
+          <div class="header__head__nav__logo">
+            <h1 class="title">
+              Internet Movie DB
+              <span class="icon">
+                <i class="fas fa-film"></i>
+              </span>
+            </h1>
+          </div>
+
+          <div class="header__head__nav__navbar">
+            <ul>
+              <li>
+                Login
+                <span class="icon">
+                  <i class="fas fa-user"></i>
+                </span>
+              </li>
+              <li>Register</li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="movies">
+        <div class="movies__searchboxLeft px-1">
+          <div class="movies__autocompleteLeft"></div>
+          <div class="movies__left"></div>
+        </div>
+
+        <div class="movies__searchboxRight px-1">
+          <div class="movies__autocompleteRight"></div>
+          <div class="movies__right"></div>
+        </div>
+      </div>
+
+      <div id="tutorial" class="tutorial py-2">
+        <h1>Search and compare movies</h1>
+        <p>We will show the difference!</p>
+      </div>
+    </section>
+
+    <script src="js/utils.js"></script>
+    <script src="js/autocomplete.js"></script>
+    <script src="js/index.js" async defer></script>
+  </body>
+</html>

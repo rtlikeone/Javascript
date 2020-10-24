@@ -1,0 +1,15 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.8rem;
+}
+
+h1 {
+  font-size: 2.8rem;
+}
+
+input {
+  font-size: calc(13px + 3 * (100vw - 682px) / 446);
+}

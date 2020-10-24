@@ -1,0 +1,36 @@
+.search-box {
+  text-align: center;
+  position: relative;
+  padding: 2rem 0 0.5rem;
+  & input {
+    padding-left: 1rem;
+    min-height: 3.5rem;
+    width: 50%;
+  }
+
+  & button {
+    position: absolute;
+    margin-left: -3px;
+    min-height: 3.5rem;
+
+    &:hover {
+      i {
+        color: #333;
+      }
+    }
+
+    & i {
+      color: rgb(175, 175, 175);
+    }
+  }
+}
+
+.tutorial {
+  background: linear-gradient(#eb2f64, lighten(#eb2f64, 15%));
+  text-align: center;
+  width: 40%;
+  margin: auto;
+  margin-top: 2rem;
+  border-radius: 1rem;
+  color: #fff;
+}

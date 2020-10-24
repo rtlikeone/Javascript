@@ -1,0 +1,96 @@
+.movies {
+  display: flex;
+
+  &__searchboxLeft,
+  &__searchboxRight {
+    flex: 0 0 50%;
+  }
+
+  &__autocompleteLeft,
+  &__autocompleteRight {
+    & .dropdown {
+      display: none;
+      position: relative;
+
+      &__menu {
+        position: absolute;
+        left: 0;
+        min-width: 50rem;
+      }
+
+      &__content {
+        position: absolute;
+        background-color: #fff;
+        border-radius: 4px;
+        box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1),
+          0 0 0 1px rgba(10, 10, 10, 0.08);
+        padding: 0.5rem 1rem;
+
+        &.results {
+          padding: 1.2rem;
+
+          & .item {
+            display: flex;
+            padding: 1rem;
+            align-items: center;
+
+            & .title {
+              padding-left: 1rem;
+            }
+
+            &:hover {
+              background: whitesmoke;
+              cursor: pointer;
+            }
+          }
+
+          & img {
+            width: 15%;
+          }
+        }
+      }
+    }
+  }
+
+  &__left,
+  &__right {
+    .movie {
+      &__media {
+        display: flex;
+        margin-bottom: 0.5rem;
+
+        & figure p img {
+          max-width: 100%;
+        }
+
+        &__content {
+          padding-left: 1rem;
+
+          & h2 {
+            padding-bottom: 1.2rem;
+          }
+
+          & h4 {
+            padding-bottom: 0.4rem;
+          }
+        }
+      }
+    }
+
+    .notification {
+      background: lightgreen;
+      margin-bottom: 1rem;
+      padding: 2rem;
+      color: white;
+
+      &__title {
+        font-size: 3rem;
+        font-weight: 600;
+      }
+    }
+
+    .winner {
+      border: solid 5px red;
+    }
+  }
+}

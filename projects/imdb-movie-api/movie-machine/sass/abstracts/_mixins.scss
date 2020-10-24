@@ -1,0 +1,65 @@
+// MEDIA QUERIES
+
+/********************************* 
+0 - 600px         Phone
+600 - 900px       Tablet portrait
+900 -1200px       Tablet landscape
+1200 - 1800px     Desktop
+1800px +          Big Desktop
+**********************************/
+
+@mixin phone {
+  @media (max-width: 600px) {
+    @content;
+  }
+}
+
+@mixin tablet-portrait {
+  @media (max-width: 900px) {
+    @content;
+  }
+}
+
+@mixin tablet-landscape {
+  @media (max-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (max-width: 1800px) {
+    @content;
+  }
+}
+
+@mixin big-desktop {
+  @media (min-width: 1800px) {
+    @content;
+  }
+}
+
+// CONTAINER BREAKPOINTS
+
+@mixin container-phone {
+  @media (min-width: 576px) {
+    @content;
+  }
+}
+
+@mixin container-tablet-portrait {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin container-tablet-landscape {
+  @media (min-width: 992px) {
+    @content;
+  }
+}
+
+@mixin container-desktop {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
