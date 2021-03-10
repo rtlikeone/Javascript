@@ -1,0 +1,45 @@
+html {
+	font-size: 62.5%;
+	box-sizing: border-box;
+
+	& body {
+		font-size: 1.8rem;
+		margin: 0;
+
+		#header {
+			background: rgb(11, 11, 11);
+			color: white;
+			padding: 1rem;
+
+			& .navbar {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+
+				& .findcharacter {
+					input {
+						padding: 0.8rem;
+
+						&:focus {
+							outline: none;
+						}
+					}
+				}
+
+				& .navmenu {
+					& ul li {
+						display: inline-block;
+						margin-right: 0.8rem;
+					}
+				}
+			}
+		}
+
+		.characters__catalog {
+			width: 80vw;
+			margin: auto;
+			display: flex;
+			flex-wrap: wrap;
+		}
+	}
+}
